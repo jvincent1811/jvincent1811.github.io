@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>joel.cafe — Tu negocio en una app, mientras te tomas un café</title>
+  <meta name="description" content="Soy Joel. Convierto ideas en apps funcionales para negocios reales: tú me cuentas tu idea y yo la convierto en una app lista en días. Además, dos apps de regalo para tu negocio." />
+  <meta name="theme-color" content="#FAF4E8" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://joel.cafe/" />
+  <meta property="og:title" content="joel.cafe — Tu negocio en una app, mientras te tomas un café" />
+  <meta property="og:description" content="Apps funcionales para tu negocio, hechas a la medida y listas en días. Y dos apps de regalo: Jornada Fácil y Vitrina Digital." />
+  <meta property="og:image" content="https://joel.cafe/assets/img/hero-cafe.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "joel.cafe",
+    "description": "Estudio de desarrollo de apps con inteligencia artificial para negocios. Apps funcionales a la medida, listas en días.",
+    "email": "hola@joel.cafe",
+    "url": "https://joel.cafe",
+    "address": { "@type": "PostalAddress", "addressLocality": "Guadalajara", "addressCountry": "MX" }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#inicio" aria-label="joel.cafe — inicio">
+        <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M27 17c-3-3 3-5 0-9" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M38 17c-3-3 3-5 0-9" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round"/>
+          <circle cx="32" cy="39" r="19" fill="var(--paper)" stroke="var(--ink)" stroke-width="4"/>
+          <circle cx="32" cy="39" r="12.5" fill="#3A2A1E"/>
+          <path d="M26 34a8 8 0 0 1 12 0" fill="none" stroke="#C99B6A" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="53.5" cy="39" r="5.5" fill="var(--paper)" stroke="var(--ink)" stroke-width="4"/>
+        </svg>
+        <span class="brand__word">joel<em class="brand__dot" aria-hidden="true"></em>cafe</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navegación principal">
+        <a href="#proceso">Proceso</a>
+        <a href="#que-hago">Qué hago</a>
+        <a href="#caso">Caso de éxito</a>
+        <a href="#regalos">Regalos</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="btn btn--sm nav__cta" href="mailto:hola@joel.cafe?subject=Quiero%20una%20app%20para%20mi%20negocio">Cuéntame tu idea</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">Estudio de apps · Guadalajara, México</p>
+          <h1 class="reveal" data-delay="1">Tu negocio, en una app.<br /><em>Mientras te tomas un café.</em></h1>
+          <p class="hero__sub reveal" data-delay="2">Soy Joel. Convierto ideas en apps funcionales para negocios reales: tú me cuentas tu idea, yo la convierto en una app lista para usar en días — sin que tengas que saber de tecnología.</p>
+          <div class="hero__actions reveal" data-delay="3">
+            <a class="btn" href="mailto:hola@joel.cafe?subject=Quiero%20una%20app%20para%20mi%20negocio">Cuéntame tu idea</a>
+            <a class="btn btn--ghost" href="#regalos">Ver los regalos</a>
+          </div>
+          <dl class="hero__stats reveal" data-delay="4">
+            <div><dt>2–7 días</dt><dd>entrega típica</dd></div>
+            <div><dt>0 código</dt><dd>tú solo describes tu idea</dd></div>
+            <div><dt>Directo</dt><dd>siempre hablas con Joel</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero__art reveal" data-delay="2">
+          <img src="assets/img/hero-cafe.jpg" alt="Joel trabajando en su laptop con un café, rodeado de pantallas de apps" width="1800" height="1013" fetchpriority="high" />
+          <div class="chip chip--a" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Lista en días
+          </div>
+          <div class="chip chip--b" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.3A7 7 0 0 0 12 2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 21h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Tu idea, tu app
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Menús digitales <i>✦</i> Pedidos en línea <i>✦</i> Agendamiento <i>✦</i> Pagos <i>✦</i> Notificaciones <i>✦</i> Catálogos <i>✦</i> Comunidad <i>✦</i> Lealtad <i>✦</i> </span><span>Menús digitales <i>✦</i> Pedidos en línea <i>✦</i> Agendamiento <i>✦</i> Pagos <i>✦</i> Notificaciones <i>✦</i> Catálogos <i>✦</i> Comunidad <i>✦</i> Lealtad <i>✦</i> </span>
+      </div>
+    </div>
+
+    <!-- ============ SOBRE JOEL ============ -->
+    <section class="section about" id="joel">
+      <div class="container about__grid">
+        <div class="about__art reveal">
+          <div class="about__blob" aria-hidden="true"></div>
+          <img src="assets/img/joel-personaje.png" alt="Ilustración de Joel con su café" width="640" height="960" loading="lazy" />
+        </div>
+        <div class="about__copy">
+          <p class="eyebrow reveal">Mucho gusto</p>
+          <h2 class="reveal" data-delay="1">Hola, soy Joel</h2>
+          <p class="reveal" data-delay="2">Ayudo a personas y negocios a tener <strong>su propia app</strong> sin necesidad de saber programar. Me cuentas tu idea —con un café de por medio, virtual o en persona— y la convierto en una app funcional que tus clientes abren desde su celular.</p>
+          <p class="reveal" data-delay="3">Trabajo con inteligencia artificial y con algo que la tecnología sola no da: <strong>criterio de negocio</strong>. Por eso cada app se hace a la medida, se entrega rápido y viene acompañada de una persona real que responde cuando la necesitas.</p>
+          <ul class="ticks reveal" data-delay="4">
+            <li>Sin plantillas genéricas: cada app se hace a la medida</li>
+            <li>Todo explicado en español claro, sin tecnicismos</li>
+            <li>Te acompaño después del lanzamiento</li>
+          </ul>
+          <p class="about__sign reveal" data-delay="5">— Joel <span>creador de joel.cafe</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO ============ -->
+    <section class="section section--alt" id="proceso">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal">El proceso</p>
+          <h2 class="reveal" data-delay="1">De tu idea a tu app, <em>en tres pasos</em></h2>
+          <p class="section__sub reveal" data-delay="2">Simple para ti, serio por dentro. Así trabajamos:</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal" data-delay="1">
+            <span class="step__num" aria-hidden="true">01</span>
+            <h3>Me cuentas tu idea</h3>
+            <p>Por correo o en una llamada. Sin jerga técnica: me platicas cómo funciona tu negocio y qué quieres lograr. Si tu idea funciona mejor como otra cosa, te lo digo con honestidad.</p>
+          </li>
+          <li class="step reveal" data-delay="2">
+            <span class="step__num" aria-hidden="true">02</span>
+            <h3>La convertimos en app</h3>
+            <p>Con inteligencia artificial y experiencia de producto, tu idea se convierte en una app funcional: diseño, funciones y contenido. Tú la ves avanzar y pides ajustes.</p>
+          </li>
+          <li class="step reveal" data-delay="3">
+            <span class="step__num" aria-hidden="true">03</span>
+            <h3>La estrenas con un enlace</h3>
+            <p>Recibes tu app lista para compartir con un enlace o código QR. Tus clientes la abren al instante y la guardan en su pantalla de inicio, como cualquier app.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ TECNOLOGÍA: CAFEINA.AI ============ -->
+    <section class="section tech" id="tecnologia">
+      <div class="container tech__grid">
+        <div class="tech__copy">
+          <p class="eyebrow reveal">La tecnología detrás</p>
+          <h2 class="reveal" data-delay="1">Tu app se construye sobre <em>cafeina.ai</em></h2>
+          <p class="reveal" data-delay="2">Todas las apps que entrego las creo con <a class="tech__link" href="https://cafeina.ai" target="_blank" rel="noopener">cafeina.ai</a>, la plataforma mexicana de inteligencia artificial para crear apps sin programar. Tú describes tu idea en español y la plataforma la convierte en una app real, lista para tus clientes.</p>
+          <p class="reveal" data-delay="3">Es la misma tecnología con la que se construyeron las dos apps de regalo de esta página.</p>
+          <div class="reveal" data-delay="4">
+            <a class="btn btn--ghost" href="https://cafeina.ai" target="_blank" rel="noopener">Conocer cafeina.ai
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+        <ul class="tech__features">
+          <li class="reveal" data-delay="1">
+            <strong>Tu app en línea al instante</strong>
+            <span>Con su enlace y su código QR listos para compartir, sin esperas.</span>
+          </li>
+          <li class="reveal" data-delay="2">
+            <strong>También en las tiendas</strong>
+            <span>Si tu negocio lo pide, tu app puede publicarse en App Store y Google Play.</span>
+          </li>
+          <li class="reveal" data-delay="3">
+            <strong>Tú administras tu contenido</strong>
+            <span>Un panel simple para actualizar productos, fotos y avisos sin ayuda técnica.</span>
+          </li>
+          <li class="reveal" data-delay="4">
+            <strong>Hecha en México, en español</strong>
+            <span>Pensada para cómo se hacen negocios en Latinoamérica, con soporte en tu idioma.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ QUÉ SÍ / QUÉ NO ============ -->
+    <section class="section section--alt" id="que-hago">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal">Para ser claros</p>
+          <h2 class="reveal" data-delay="1">Qué sí puedo construirte <em>y qué no</em></h2>
+          <p class="section__sub reveal" data-delay="2">Prefiero decírtelo desde el inicio, antes de que inviertas tiempo en una idea que no aplica.</p>
+        </header>
+
+        <div class="cando">
+          <article class="cando__card cando__card--yes reveal" data-delay="1">
+            <h3>Sí puedo construir</h3>
+            <ul class="cando__list cando__list--yes">
+              <li>Apps para restaurantes y delivery</li>
+              <li>Apps para comercios y tiendas</li>
+              <li>Apps para clínicas y consultorios</li>
+              <li>Apps para contadores y despachos</li>
+              <li>Apps para coaches y consultores</li>
+            </ul>
+            <p class="cando__note">¿Tu idea es distinta? Escríbeme y la revisamos juntos.</p>
+          </article>
+
+          <article class="cando__card cando__card--no reveal" data-delay="2">
+            <h3>Lo que no construyo</h3>
+            <ul class="cando__list cando__list--no">
+              <li>Videojuegos y apps de entretenimiento</li>
+              <li>Redes sociales o apps de citas</li>
+              <li>Apps bancarias, financieras o de inversión</li>
+              <li>Plataformas de transporte en tiempo real</li>
+              <li>Cualquier cosa que requiera regulación especial</li>
+            </ul>
+            <p class="cando__note">¿Dudas si tu idea aplica? Te lo digo de frente, sin compromiso.</p>
+          </article>
+        </div>
+
+        <aside class="guide reveal" data-delay="3">
+          <div>
+            <h3>¿Aún sin una idea clara?</h3>
+            <p>Descarga gratis la guía con <strong>30 ideas de apps para negocios de Latinoamérica</strong>. Sin registro, sin correo, sin costo.</p>
+          </div>
+          <a class="btn" href="https://cafeina.ai/assets/guia-30-ideas.pdf" target="_blank" rel="noopener">Descargar la guía gratis</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ CASO DE ÉXITO ============ -->
+    <section class="section section--dark" id="caso">
+      <div class="container case__grid">
+        <div class="case__copy">
+          <p class="eyebrow eyebrow--light reveal">Caso de éxito real</p>
+          <h2 class="reveal" data-delay="1">La plataforma de niñeras más grande de Guadalajara <em>empezó como una idea</em></h2>
+          <p class="reveal" data-delay="2"><strong>iNanny</strong> conecta familias con niñeras confiables. Les construimos su app completa: agendamiento de citas, calificación de servicios y verificación de perfiles.</p>
+          <blockquote class="case__quote reveal" data-delay="3">
+            <p>“iNanny pasó de ser una idea a una plataforma funcional en días. Más de 200 familias confían en nosotras mes con mes.”</p>
+            <footer>— Ana Vincent, <span>Fundadora de iNanny</span></footer>
+          </blockquote>
+        </div>
+        <div class="case__photos" aria-label="Fotografías del equipo y las niñeras de iNanny">
+          <figure class="ph ph--a reveal" data-delay="1"><img src="assets/img/inanny-2.jpg" alt="Niñera de iNanny con una bebé frente al castillo" loading="lazy" /></figure>
+          <figure class="ph ph--b reveal" data-delay="2"><img src="assets/img/inanny-1.jpg" alt="Niñeras de iNanny paseando con niños en el parque" loading="lazy" /></figure>
+          <figure class="ph ph--c reveal" data-delay="3"><img src="assets/img/inanny-3.jpg" alt="Equipo completo de niñeras iNanny" loading="lazy" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APPS DE REGALO ============ -->
+    <section class="section" id="regalos">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal">Un regalo para tu negocio</p>
+          <h2 class="reveal" data-delay="1">Dos apps completas, <em>gratis para siempre</em></h2>
+          <p class="section__sub reveal" data-delay="2">Mi forma de decirte bienvenido: dos herramientas listas para usar hoy. Escanea el código QR o abre el enlace, y empieza.</p>
+        </header>
+
+        <div class="gifts">
+          <article class="gift reveal" data-delay="1">
+            <div class="gift__art"><img src="assets/img/app-jornada.jpg" alt="Ilustración de Jornada Fácil: teléfono con reloj y paloma de verificación" loading="lazy" /></div>
+            <div class="gift__body">
+              <p class="gift__tag">Registro de jornada laboral</p>
+              <h3>Jornada Fácil</h3>
+              <p>Tus empleados registran entrada y salida con selfie, GPS y folio único, desde un solo dispositivo en la entrada. Cumple con la Ley Federal del Trabajo sin complicaciones — y sin papel.</p>
+              <ul class="ticks ticks--sm">
+                <li>Selfie + un botón: menos de 5 segundos por registro</li>
+                <li>Hora del servidor y folio único, inalterables</li>
+                <li>Reportes en PDF listos para inspección</li>
+              </ul>
+              <div class="gift__qr">
+                <img src="assets/img/qr-jornada.png" alt="Código QR para abrir la app Jornada Fácil" width="560" height="560" loading="lazy" />
+                <div>
+                  <p class="gift__scan">Escanéalo con tu celular</p>
+                  <a class="btn btn--sm" href="https://jornadafacil.cafeina.ai" target="_blank" rel="noopener">Abrir la app</a>
+                  <a class="gift__more" href="https://jornadafacil.app" target="_blank" rel="noopener">Conocer más en jornadafacil.app</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="gift reveal" data-delay="2">
+            <div class="gift__art"><img src="assets/img/app-vitrina.jpg" alt="Ilustración de Vitrina Digital: teléfono con tienda y catálogo de productos" loading="lazy" /></div>
+            <div class="gift__body">
+              <p class="gift__tag">Catálogo y pedidos</p>
+              <h3>Vitrina Digital</h3>
+              <p>Tu negocio en el teléfono de tus clientes: catálogo con tus productos, pedidos organizados con historial y notificaciones directas. Con tu logo y tus colores — 100% tuya.</p>
+              <ul class="ticks ticks--sm">
+                <li>Catálogo siempre visible, con fotos y precios</li>
+                <li>Pedidos con comprobante de pago e historial</li>
+                <li>Promociones directas al celular de tus clientes</li>
+              </ul>
+              <div class="gift__qr">
+                <img src="assets/img/qr-vitrina.png" alt="Código QR para abrir la app Vitrina Digital" width="560" height="560" loading="lazy" />
+                <div>
+                  <p class="gift__scan">Escanéalo con tu celular</p>
+                  <a class="btn btn--sm" href="https://vitrina.cafeina.ai" target="_blank" rel="noopener">Abrir la app</a>
+                  <a class="gift__more" href="https://vitrinadigital.app" target="_blank" rel="noopener">Conocer más en vitrinadigital.app</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section--alt" id="preguntas">
+      <div class="container container--narrow">
+        <header class="section__head">
+          <p class="eyebrow reveal">Preguntas frecuentes</p>
+          <h2 class="reveal" data-delay="1">Lo que todos me preguntan <em>antes del primer café</em></h2>
+        </header>
+
+        <div class="faq">
+          <details class="faq__item reveal" data-delay="1">
+            <summary>¿Qué necesito para empezar?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>Solo tu idea y una conversación de unos 20 minutos. Me cuentas cómo funciona tu negocio y qué quieres lograr; yo me encargo de todo lo demás.</p></div>
+          </details>
+          <details class="faq__item reveal" data-delay="2">
+            <summary>¿Es una app real o una página web disfrazada?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>Sí es una app real. Tus clientes la abren desde un enlace o código QR y la guardan en su pantalla de inicio como cualquier app: rápida, con avisos y acceso a la cámara y ubicación cuando haga falta.</p></div>
+          </details>
+          <details class="faq__item reveal" data-delay="3">
+            <summary>¿Pueden publicarla en App Store y Google Play?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>Sí. La PWA se puede empaquetar y publicar en las tiendas cuando tu negocio lo necesite. Muchas apps empiezan con un simple enlace y dan el salto a las tiendas después.</p></div>
+          </details>
+          <details class="faq__item reveal" data-delay="4">
+            <summary>¿Y si mi idea no funciona como app?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>Te lo digo en la primera conversación, con honestidad. Si tu idea funciona mejor como página web o necesita ajustes, te lo planteo antes de que inviertas un solo peso. No te vendo algo que no necesitas.</p></div>
+          </details>
+          <details class="faq__item reveal" data-delay="5">
+            <summary>¿Cuánto tarda mi app?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>Entre 2 y 7 días dependiendo de la complejidad. La mayoría de las apps están listas en menos de una semana, y los ajustes posteriores se hacen rápido.</p></div>
+          </details>
+          <details class="faq__item reveal" data-delay="6">
+            <summary>¿Necesito saber de tecnología?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>No. Tú describes tu idea en español y yo me encargo de lo técnico. Puedes estar tan involucrado — o tan desconectado — como quieras.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section contact" id="contacto">
+      <div class="container container--narrow contact__inner">
+        <p class="eyebrow reveal">Hablemos</p>
+        <h2 class="reveal" data-delay="1">¿Tienes una idea?<br /><em>Cuéntamela.</em></h2>
+        <p class="reveal" data-delay="2">Escríbeme y te digo cómo la convertimos en app. Respondo personalmente, normalmente el mismo día.</p>
+        <div class="reveal" data-delay="3">
+          <a class="btn btn--lg" href="mailto:hola@joel.cafe?subject=Tengo%20una%20idea%20de%20app">hola@joel.cafe</a>
+        </div>
+        <p class="contact__note reveal" data-delay="4">Guadalajara, Jalisco · México</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="brand brand--light" href="#inicio" aria-label="joel.cafe — inicio">
+        <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M27 17c-3-3 3-5 0-9" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M38 17c-3-3 3-5 0-9" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round"/>
+          <circle cx="32" cy="39" r="19" fill="var(--ink)" stroke="var(--paper)" stroke-width="4"/>
+          <circle cx="32" cy="39" r="12.5" fill="#4A3524"/>
+          <path d="M26 34a8 8 0 0 1 12 0" fill="none" stroke="#C99B6A" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="53.5" cy="39" r="5.5" fill="var(--ink)" stroke="var(--paper)" stroke-width="4"/>
+        </svg>
+        <span class="brand__word">joel<em class="brand__dot" aria-hidden="true"></em>cafe</span>
+      </a>
+      <nav class="footer__links" aria-label="Navegación del pie de página">
+        <a href="#proceso">Proceso</a>
+        <a href="#que-hago">Qué hago</a>
+        <a href="#caso">Caso de éxito</a>
+        <a href="#regalos">Regalos</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="mailto:hola@joel.cafe">hola@joel.cafe</a>
+      </nav>
+      <p class="footer__line">Hecho con café en Guadalajara · construido sobre <a href="https://cafeina.ai" target="_blank" rel="noopener">cafeina.ai</a> · © <span id="year">2026</span> joel.cafe</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
